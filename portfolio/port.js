@@ -16,5 +16,44 @@ $(document).ready(function(){
       
         $(".navbar .menu").toggleClass("active");
         $(".menu-btn i").toggleClass("active");
+   }); 
+     
+    //typing animation on homepage   
+       var typed= new Typed(".type",{
+           strings:["programmer","game developer","website designer","gamer"],
+           typeSpeed:100,
+           backSpeed:60,
+           loop:true
+       });
+       //this code will iterate each element of our array and display it 
+       var typed= new Typed(".type-2",{
+        strings:["programmer","game developer","website designer","gamer"],
+        typeSpeed:200,
+        backSpeed:90,
+        loop:true
+    });
+    
+   //owl carousal code for team section
+   $('.carousel').owlCarousel({
+           margin:20,
+           loop:true,
+           autoplayTimeOut:2000,
+           autoplayHoverPause:true,
+           responsive:
+           {
+               0:{
+                   items:1,
+                   nav:false
+               },
+               600:{
+                items:2,
+                nav:false
+               },
+               1000:{
+                items:3,
+                nav:false
+               }
+           }
+
    });
 });
